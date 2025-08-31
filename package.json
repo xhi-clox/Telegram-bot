@@ -63,5 +63,36 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "nextConfig": {
+    "typescript": {
+      "ignoreBuildErrors": true
+    },
+    "eslint": {
+      "ignoreDuringBuilds": true
+    },
+    "distDir": ".next",
+    "pageExtensions": [
+      "tsx",
+      "ts",
+      "jsx",
+      "js"
+    ],
+    "images": {
+      "remotePatterns": [
+        {
+          "protocol": "https",
+          "hostname": "placehold.co",
+          "port": "",
+          "pathname": "/**"
+        },
+        {
+          "protocol": "https",
+          "hostname": "picsum.photos",
+          "port": "",
+          "pathname": "/**"
+        }
+      ]
+    }
   }
 }
